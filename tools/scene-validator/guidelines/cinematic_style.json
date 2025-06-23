@@ -1,0 +1,130 @@
+{
+  "style_name": "Cinematic Standard",
+  "version": "1.0",
+  "description": "Standard cinematic style guidelines for professional video production",
+  "rules": {
+    "composition": {
+      "rule_of_thirds": {
+        "description": "Key elements should align with rule of thirds grid intersections",
+        "severity": "high",
+        "threshold": 0.8
+      },
+      "framing": {
+        "description": "Subjects should have appropriate headroom and leadroom",
+        "severity": "medium",
+        "threshold": 0.7
+      },
+      "balance": {
+        "description": "Frame should maintain visual balance (symmetrical or asymmetrical)",
+        "severity": "medium",
+        "threshold": 0.6
+      },
+      "depth": {
+        "description": "Scene should have foreground, midground, and background elements",
+        "severity": "low",
+        "threshold": 0.5
+      }
+    },
+    "color": {
+      "palette": {
+        "description": "Colors should adhere to the defined color palette",
+        "severity": "high",
+        "primary_colors": ["#1A2A3A", "#2B3C4D", "#4D5E6F"],
+        "secondary_colors": ["#A1B2C3", "#D4E5F6"],
+        "accent_colors": ["#F7A541", "#E55934"],
+        "threshold": 0.75
+      },
+      "contrast": {
+        "description": "Maintain proper contrast ratio between elements",
+        "severity": "medium",
+        "minimum_ratio": 4.5,
+        "threshold": 0.8
+      },
+      "saturation": {
+        "description": "Saturation levels should be consistent",
+        "severity": "medium",
+        "range": [0.3, 0.7],
+        "threshold": 0.7
+      },
+      "temperature": {
+        "description": "Color temperature should be consistent within scenes",
+        "severity": "high",
+        "threshold": 0.9
+      }
+    },
+    "lighting": {
+      "key_light": {
+        "description": "Primary light source direction and intensity",
+        "severity": "high",
+        "threshold": 0.85
+      },
+      "fill_light": {
+        "description": "Secondary light to fill shadows",
+        "severity": "medium",
+        "key_to_fill_ratio": [2, 4],
+        "threshold": 0.7
+      },
+      "back_light": {
+        "description": "Rim lighting to separate subject from background",
+        "severity": "medium",
+        "threshold": 0.6
+      },
+      "exposure": {
+        "description": "Proper exposure levels",
+        "severity": "high",
+        "histogram_balance": "mid",
+        "threshold": 0.9
+      }
+    },
+    "motion": {
+      "stability": {
+        "description": "Camera movement should be stable and intentional",
+        "severity": "high",
+        "threshold": 0.8
+      },
+      "pacing": {
+        "description": "Movement and cuts should follow consistent pacing",
+        "severity": "medium",
+        "threshold": 0.7
+      }
+    }
+  },
+  "scene_types": {
+    "dialogue": {
+      "shot_types": ["over-the-shoulder", "medium", "close-up"],
+      "lighting_style": "high-key",
+      "recommended_focal_length": [35, 85]
+    },
+    "action": {
+      "shot_types": ["wide", "medium", "tracking"],
+      "lighting_style": "high-contrast",
+      "recommended_focal_length": [24, 50]
+    },
+    "establishing": {
+      "shot_types": ["wide", "aerial", "tracking"],
+      "lighting_style": "natural",
+      "recommended_focal_length": [16, 35]
+    },
+    "emotional": {
+      "shot_types": ["close-up", "extreme-close-up"],
+      "lighting_style": "dramatic",
+      "recommended_focal_length": [85, 135]
+    }
+  },
+  "transitions": {
+    "standard_cut": {
+      "description": "Direct cut between scenes",
+      "usage": "general purpose"
+    },
+    "dissolve": {
+      "description": "Gradual transition between scenes",
+      "usage": "passage of time, change of location",
+      "recommended_duration": [0.5, 2.0]
+    },
+    "fade": {
+      "description": "Fade to/from black or white",
+      "usage": "beginning/end of sequence or significant time passage",
+      "recommended_duration": [1.0, 3.0]
+    }
+  }
+}
