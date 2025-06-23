@@ -1,0 +1,35 @@
+{
+  "name": "loop-optimizer",
+  "version": "0.2.0",
+  "description": "A tool for optimizing video loops with seamless transitions",
+  "main": "loop-optimizer.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node loop-optimizer.js"
+  },
+  "keywords": [
+    "video",
+    "loop",
+    "optimization",
+    "media",
+    "animation"
+  ],
+  "author": "Den Media Automation Toolkit Team",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/storage": "^6.10.1",
+    "@google-cloud/video-intelligence": "^4.2.2",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "bin": {
+    "loop-optimizer": "./cli.js"
+  }
+}
